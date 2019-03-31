@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pagin8tion</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  <body>
+    <ul class="pagin8tion">
+      <li>&lt;</li>
+      <li>1</li>
+      <li class="disabled">...</li>
+      <li>5</li>
+      <li class="selected">6</li>
+      <li>7</li>
+      <li class="disabled">...</li>
+      <li>10</li>
+      <li>&gt;</li>
+    </ul>
+    <style>
+      ul.pagin8tion {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+      }
+
+      ul.pagin8tion > li {
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        background-color: #AEC5D6;
+        font-size: 14px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 3px;
+        color: black;
+        cursor: pointer;
+      }
+
+      ul.pagin8tion > li:hover,
+      ul.pagin8tion > li.selected {
+        background-color: #D40424;
+        color: white;
+      }
+
+      ul.pagin8tion > li.disabled:hover,
+      ul.pagin8tion > li.disabled {
+        cursor: not-allowed;
+        background-color: transparent;
+        color: black;
+      }
+    </style>
+  </body>
+</html>
